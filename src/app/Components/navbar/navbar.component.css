@@ -1,0 +1,18 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+mat-toolbar {
+    height: 80px; /* Adjust the height as needed */
+    font-size: 1.5rem; /* Optional: Adjust font size for better readability */
+  }
+.toolbar-button {
+    font-size: 1.25rem; /* Adjust the font size for the buttons */
+  }
+  
+  

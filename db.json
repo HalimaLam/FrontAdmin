@@ -1,0 +1,134 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "ioio",
+      "lastName": "Taylor",
+      "typePieceIdentite": "Passeport",
+      "numeroPiece": "321654987",
+      "dob": "1991-11-15",
+      "adresse": "876 Cedar",
+      "email": "",
+      "numeroI": "",
+      "numeroP": "",
+      "Desc": "",
+      "file": "",
+      "id": "8"
+    },
+    {
+      "id": "10",
+      "firstName": "Michael",
+      "lastName": "Smith",
+      "typePieceIdentite": "Permis de conduire",
+      "numeroPiece": "456789123",
+      "dob": "1976-03-10",
+      "adresse": "456 Pine"
+    },
+    {
+      "id": "11",
+      "firstName": "Jessica",
+      "lastName": "Brown",
+      "typePieceIdentite": "Passeport",
+      "numeroPiece": "852963741",
+      "dob": "1993-07-18",
+      "adresse": "789 Maple"
+    },
+    {
+      "id": "12",
+      "firstName": "Christopher",
+      "lastName": "Davis",
+      "typePieceIdentite": "Carte d'identité",
+      "numeroPiece": "159753456",
+      "dob": "1980-05-03",
+      "adresse": "234 Elm"
+    },
+    {
+      "id": "13",
+      "firstName": "Jennifer",
+      "lastName": "Miller",
+      "typePieceIdentite": "Permis de conduire",
+      "numeroPiece": "369852147",
+      "dob": "1979-09-28",
+      "adresse": "567 Birch"
+    },
+    {
+      "id": "14",
+      "firstName": "Daniel",
+      "lastName": "Wilson",
+      "typePieceIdentite": "Passeport",
+      "numeroPiece": "753951846",
+      "dob": "1988-12-07",
+      "adresse": "890 Walnut"
+    },
+    {
+      "id": "15",
+      "firstName": "Amanda",
+      "lastName": "Martinez",
+      "typePieceIdentite": "Carte d'identité",
+      "numeroPiece": "246801357",
+      "dob": "1995-02-14",
+      "adresse": "678 Cherry"
+    },
+    {
+      "id": "16",
+      "firstName": "David",
+      "lastName": "Anderson",
+      "typePieceIdentite": "Permis de conduire",
+      "numeroPiece": "579314682",
+      "dob": "1983-06-21",
+      "adresse": "901 Willow"
+    },
+    {
+      "id": "17",
+      "firstName": "Sarah",
+      "lastName": "Garcia",
+      "typePieceIdentite": "Passeport",
+      "numeroPiece": "468213579",
+      "dob": "1990-04-30",
+      "adresse": "345 Sycamore"
+    },
+    {
+      "firstName": "halima",
+      "lastName": "lam",
+      "typePieceIdentite": "CIN",
+      "numeroPiece": "w14528",
+      "dob": "2024-05-14T22:00:00.000Z",
+      "adresse": "222shjksn",
+      "email": "knSJ@HNS",
+      "numeroI": "5212",
+      "numeroP": "52468512",
+      "Desc": "",
+      "id": "18"
+    },
+    {
+      "id": "e807",
+      "firstName": "halima",
+      "lastName": "halimma",
+      "typePieceIdentite": "CIN",
+      "numeroPiece": "3434",
+      "dob": "2024-05-01T23:00:00.000Z",
+      "adresse": "DZEP",
+      "email": "test@gmail.com",
+      "numeroI": "",
+      "numeroP": "",
+      "Desc": "",
+      "file": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div *ngIf="agent" class="mat-card">
+    <h2>{{ agent.firstName }} {{ agent.lastName }}</h2>
+    <p><strong>Pièce d'identité:</strong> {{ agent.typePieceIdentite }}</p>
+    <p><strong>Numéro de pièce:</strong> {{ agent.numeroPiece }}</p>
+    <p><strong>Date de naissance:</strong> {{ agent.dob | date : 'dd/MM/yyyy'}}</p>
+    <p><strong>Adresse:</strong> {{ agent.adresse }}</p>
+    <p><strong>Email:</strong> {{ agent.email }}</p>
+    <p><strong>Numéro d'immatriculation:</strong> {{ agent.numeroI }}</p>
+    <p><strong>Numéro de patente:</strong> {{ agent.numeroP }}</p>
+  </div>
+  

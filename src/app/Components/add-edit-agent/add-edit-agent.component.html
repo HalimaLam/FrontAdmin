@@ -1,0 +1,85 @@
+<div mat-dialog-title>
+    <h1>Informations personnelles</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Nom<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. Halima" formControlName="firstName" class="dark-yellow-background">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Prénom<span class="required-field">*</span></mat-label>
+                <input matInput placeholder="Ex. Technical" formControlName="lastName" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Type de pièce d'identité<span class="required-field">*</span></mat-label>
+                <mat-select formControlName="typePieceIdentite">
+                    <mat-option value="CIN">C.I.N</mat-option>
+                    <mat-option value="Passeport">Passeport</mat-option>
+                    <mat-option value="Permis de conduire">Permis de conduire</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Numéro de pièce<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. ABC123" formControlName="numeroPiece" aria-required="true" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Date de naissance</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dob" class="dark-yellow-background">
+                <mat-hint>MM/JJ/AAAA</mat-hint>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Adresse<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. 123 Rue de l'Exemple" formControlName="adresse" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email<span class="required-field">*</span></mat-label>
+                <input matInput type="email" placeholder="Ex. test@gmail.com" formControlName="email" class="dark-yellow-background">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Confirmation Email</mat-label>
+                <input matInput type="email" placeholder="Ex. test@gmail.com" formControlName="email" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label class="required-label">Numéro de téléphone<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. 123456789" formControlName="numero" aria-required="true" class="dark-yellow-background">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Numéro d'immatriculation au registre de commerce<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. 123456789" formControlName="numeroI" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Numéro de patente<span class="required-field">*</span></mat-label>
+                <input matInput type="text" placeholder="Ex. 123456789" formControlName="numeroP" class="dark-yellow-background">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Pièces jointes</h3>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Description<span class="required-field">*</span></mat-label>
+            <input matInput type="text" formControlName="desc" class="dark-yellow-background">
+            <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+        </mat-form-field>
+      
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button color="primary" type="submit" class="dark-yellow-background">{{data ? 'Update': 'Enregistrer'}}</button>
+        <button mat-raised-button type="button" [mat-dialog-close]="false" class="dark-yellow-background">Annuler</button>
+    </div>
+</form>
