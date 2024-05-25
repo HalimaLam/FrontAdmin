@@ -6,6 +6,7 @@ import { AgentdetailsComponent } from './Components/agentdetails/agentdetails.co
 
 const routes: Routes = [
   {path:"",component:LoginComponent},
+  {path:"login",component:LoginComponent},
   {path:"list",component:ListAgentComponent},
   {path:'details/:id',component:AgentdetailsComponent}
   

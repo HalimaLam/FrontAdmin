@@ -5,7 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { AgentServiceService } from '../../service/agent-service.service';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -16,6 +16,7 @@ export class NavbarComponent {
   constructor(
     private _dialog: MatDialog,
     private _empService: AgentServiceService,
+    private router: Router
 
     
   ) {}
@@ -46,5 +47,8 @@ export class NavbarComponent {
       error: console.log,
     });
   }
-
+  logout(): void {
+    // Logique de déconnexion ici
+    this.router.navigate(['/login']);
+  }
 }
