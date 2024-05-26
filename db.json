@@ -59,15 +59,6 @@
       "adresse": "234 Elm"
     },
     {
-      "id": "13",
-      "firstName": "Jennifer",
-      "lastName": "Miller",
-      "typePieceIdentite": "Permis de conduire",
-      "numeroPiece": "369852147",
-      "dob": "1979-09-28",
-      "adresse": "567 Birch"
-    },
-    {
       "id": "14",
       "firstName": "Daniel",
       "lastName": "Wilson",
